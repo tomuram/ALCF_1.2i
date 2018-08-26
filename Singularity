@@ -2,6 +2,7 @@ Bootstrap: docker
 From: lsstdesc/stack-sims:w_2018_26-sims_2_9_0
 
 %post
+   yum -y install python-pip
    pip install mpi4py
    set +e
    source scl_source enable devtoolset-6
